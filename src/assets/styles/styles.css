@@ -1,0 +1,91 @@
+* {
+	--pBgColor: rgb(1, 1, 209);
+	--pTextColor: #000;
+	--pLinkTextColor: #fff;
+	--activeLinkColor: #fc1515;
+	--lightGray: rgba(128, 128, 128, 0.712);
+	--paleGray: rgba(128, 128, 128, 0.39);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	width: 100vw;
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5rem;
+	background-color: var(--pBgColor);
+}
+
+.navbar {
+	width: 300px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: inherit;
+}
+
+a {
+	color: var(--pLinkTextColor);
+	text-decoration: none;
+}
+
+a button {
+	background: var(--pBgColor);
+	color: var(--pLinkTextColor);
+	text-align: center;
+	width: 10rem;
+	padding: 10px 0;
+}
+
+a.active,
+a.active button {
+	color: var(--activeLinkColor);
+}
+
+.productsNav {
+	width: 700px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+::placeholder {
+	color: var(--lightGray);
+}
+
+input {
+	display: block;
+	height: 50px;
+	width: 400px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+input:focus::placeholder {
+	color: var(--activeLinkColor);
+}
+
+.productCard {
+	background-color: var(--lightGray);
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	box-shadow: 0 0 10px 5px var(--paleGray);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#searchResults {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
