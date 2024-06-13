@@ -11,11 +11,11 @@ import Search from "./products/Search"
 export {
 	AddProduct,
 	Home,
-	RootLayout as Layout,
+	RootLayout,
 	List,
 	Login,
 	NoMatch,
 	ProductDisplay,
-	ProductsLayout as Products,
+	ProductsLayout,
 	Search,
 }

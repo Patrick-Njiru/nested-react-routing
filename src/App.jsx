@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom"
 import {
-	Layout as RootLayout,
+	RootLayout,
 	Home,
 	Login,
 	List,
 	Search,
 	AddProduct,
 	ProductDisplay,
-	Products as ProductsLayout,
+	ProductsLayout,
 } from "./pages"
 
 const App = () => {
